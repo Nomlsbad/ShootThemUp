@@ -30,6 +30,8 @@ public:
 	int32 GetBulletsLeft() const;
 	int32 GetClipsLeft() const;
 
+	void Zoom(bool Enabled);
+
 protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Weapon")

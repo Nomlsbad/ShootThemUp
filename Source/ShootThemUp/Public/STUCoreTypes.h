@@ -3,6 +3,7 @@
 #include "STUCoreTypes.generated.h"
 
 class ASTUBaseWeapon;
+class USoundCue;
 
 //Weapon
 
@@ -84,6 +85,9 @@ struct FImpactData
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "VFX")
 	FDecalData DecalData;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Sound")
+	USoundCue* SoundEffect;
 };
 
 USTRUCT(BlueprintType)

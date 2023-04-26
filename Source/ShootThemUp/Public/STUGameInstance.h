@@ -22,13 +22,18 @@ public:
 
 	TArray<FLevelData> GetLevelsData() const {return LevelsData; }
 
+	void ToggleVolume();
+
 protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Game")
 	TArray<FLevelData> LevelsData;
 
-		UPROPERTY(EditDefaultsOnly, Category = "Game")
-		FName MenuLevelName = NAME_None;
+	UPROPERTY(EditDefaultsOnly, Category = "Game")
+	FName MenuLevelName = NAME_None;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Sound")
+	USoundClass* MasterSoundClass;
 
 private:
 
